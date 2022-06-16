@@ -1,11 +1,9 @@
 import { useState } from "react";
 import {useNavigate} from "react-router-dom"
-// useHistory di ganti pakai useNavigate
-// https://stackoverflow.com/questions/64838587/how-to-properly-use-usehistory-from-react-router-dom
 
 const AddProduct = ()=>{
-    const [title, setTitle] = useState('');
-    const [price, setPrice] = useState('');
+    const [title, setTitle] = useState('Product test');
+    const [price, setPrice] = useState('999');
     const navigate  = useNavigate();
 
     const saveProduct = async(e)=>{
@@ -40,7 +38,7 @@ const AddProduct = ()=>{
                     <button className="button is-primary">Save</button>
                 </div>
                 </div>
-
+                    <p>{ title } - { price }</p>
             </form>
         </div>
     )

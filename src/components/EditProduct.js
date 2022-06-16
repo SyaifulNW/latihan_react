@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-// useHistory di ganti pakai useNavigate
-// https://stackoverflow.com/questions/64838587/how-to-properly-use-usehistory-from-react-router-dom
+
 
  
 const EditProduct = () => {
